@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemini Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="Gemini.css">
+
+</head>
+<body>
+
+<header class="header">
+    <h1 class="title">Hello there</h1>
+    <p class="subtitle">How can I help you?</p>
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Help me plan a game night with my 5 best friends under ₹100.</h4>
+        <span class="icon material-symbols-outlined">draw</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">What are the best tips to improve my public speaking skills?</h4>
+        <span class="icon material-symbols-outlined">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Share today's news.</h4>
+        <span class="icon material-symbols-outlined">explore</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Write a C++ code to find if a given number is prime or not.</h4>
+        <span class="icon material-symbols-outlined">code</span>
+      </li>
+    </ul>
+  </header>
+
+  <div class="chat-list" id="chat-list"></div>
+
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" class="typing-input" id="input" placeholder="Enter a prompt here" />
+        <button id="send-message-button" class="icon material-symbols-outlined" type="submit">send</button>
+      </div>
+      <div class="action-button">
+        <span class="icon material-symbols-outlined" id="toggle-speaker">volume_up</span>
+
+        <span class="icon material-symbols-outlined" id="theme-toggle-button">light_mode</span>
+        <span class="icon material-symbols-outlined" id="delete-chat-button">delete</span>
+      </div>
+    </form>
+  </div>
+
+  <div class="credits">
+    <p>
+      Crafted with ❤️ by 
+      <a href="https://www.linkedin.com/in/sunil-pandey-7a5539265~" target="_blank">
+        Sunil Pandey
+      </a>
+    </p>
+  </div>
+  <script src="Gemini.js"></script>
+</body>
+</html>

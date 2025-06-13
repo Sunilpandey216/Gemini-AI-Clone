@@ -1,0 +1,198 @@
+ body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #1e1e2f;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.light-mode {
+      background-color: #f1f1f1;
+      color: #1e1e2f;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #c0c0c0;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .suggestion-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .suggestion {
+      background-color: #2a2a40;
+      padding: 16px;
+      border-radius: 12px;
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+.light-mode .suggestion {
+  background-color: #f0f0f0;
+}
+.light-mode .typing-area {
+  background-color: #e6e6e6;
+}
+
+    .suggestion:hover {
+      background-color: #3a3a55;
+      transform: translateY(-4px);
+    }
+
+    body.light-mode .suggestion:hover {
+      background-color: #ccc;
+    }
+
+    .text {
+      font-size: 0.95rem;
+      margin-right: 10px;
+      flex: 1;
+    }
+
+    .icon {
+      font-size: 24px;
+    }
+
+    .chat-list {
+      background: #2a2a40;
+      margin: 30px 0;
+      padding: 20px;
+      border-radius: 10px;
+      min-height: 150px;
+    }
+
+    body.light-mode .chat-list {
+      background: #eee;
+    }
+
+    .typing-area {
+      background-color: #2a2a40;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    body.light-mode .typing-area {
+      background-color: #eee;
+    }
+
+    .typing-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .typing-input {
+      flex: 1;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: #1e1e2f;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    body.light-mode .typing-input {
+      background-color: #fff;
+      color: #000;
+    }
+
+    #send-message-button {
+      padding: 10px;
+      background-color: #7873f5;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    #send-message-button:hover {
+      background-color: #5a55d5;
+    }
+
+    .action-button {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .action-button .icon {
+      padding: 8px;
+      border-radius: 50%;
+      background-color: #1e1e2f;
+      cursor: pointer;
+    }
+
+    body.light-mode .action-button .icon {
+      background-color: #ccc;
+    }
+
+    .action-button .icon:hover {
+      background-color: #3a3a55;
+    }
+
+    body.light-mode .action-button .icon:hover {
+      background-color: #bbb;
+    }
+
+    .credits {
+      text-align: center;
+      margin-top: auto;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .credits a {
+      color: #ff6ec4;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .suggestion-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .suggestion {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
